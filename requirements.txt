@@ -1,0 +1,42 @@
+# ── FastAPI & Server ────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9
+
+# ── Pydantic / Settings ─────────────────────────────────────────────────────
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# ── LangChain core ──────────────────────────────────────────────────────────
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-text-splitters>=0.2.0
+langchain-community>=0.2.0
+langchain-openai>=0.1.0
+
+# ── LLM providers ───────────────────────────────────────────────────────────
+openai>=1.30.0
+httpx>=0.27.0          # Ollama + async HTTP
+
+# ── Embeddings ──────────────────────────────────────────────────────────────
+sentence-transformers>=3.0.0
+torch>=2.0.0           # CPU build; swap for GPU build if available
+
+# ── Vector Database ─────────────────────────────────────────────────────────
+chromadb>=0.5.0
+
+# ── Document Parsers ────────────────────────────────────────────────────────
+pypdf>=4.2.0
+python-docx>=1.1.0
+
+# ── Utilities ───────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+tenacity>=8.3.0        # Retry logic
+tqdm>=4.66.0           # Progress bars for embedding batches
+
+# ── Testing ─────────────────────────────────────────────────────────────────
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+pytest-mock>=3.14.0
+httpx>=0.27.0          # Required by FastAPI TestClient
+
